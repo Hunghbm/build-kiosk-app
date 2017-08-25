@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Góp Ý - Phản Hồi</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/reset.css">
+  <link rel="stylesheet" href="../assets/css/fonts.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="body">
+  <header class="box-header">
+    <div class="container">
+      <h1 class="logo">
+        <a class="link-logo" href="./home.html">
+          <img class="img-logo" src="../assets/images/logo/Logo.png" />
+        </a>
+      </h1>
+      <div class="text-logo">
+        <span class="text-title-logo">UBND QUẬN THANH KHÊ<span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="header">
+        <h2 class="title bg-fb">
+          <span class="title-main">Góp Ý - phản Ánh</span>
+        </h2>
+        <span class="message-fb" id="showMessage">
+          <span class="text-message-fb">
+            Gửi góp ý thành công
+          </span>
+          <span class="icon-close-message icon-close" onclick="onclickHideMessage()"></span>
+        </span>
+      </div>
+      <div class="content">
+        <div class="box-content">
+          <div class="box-img">
+            <img class="img-fb" src="../assets/images/bg-feedback.png" />
+          </div>
+          <div class="box-input">
+            <div class="title-form">
+              <span class="text-title">Thông tin góp ý</span>
+            </div>
+            <div class="form-fb" action="" accept-charset=""method="post">
+              <div class="sub-box-input">
+                <div class="title-input">
+                  <label class="label-input" for="inp-name">
+                    <span class="name-fb">Họ và tên<span>
+                  </label>
+                </div>
+                <div class="input-fb">
+                  <input id="ipt-name" type="text" placeholder="Nhập họ và tên" />
+                </div>
+              </div>
+              <div class="sub-box-input">
+                <div class="title-input">
+                  <label class="label-input" for="inp-phone">
+                    <span class="phone-fb">Số điện thoại<span>
+                  </label>
+                </div>
+                <div class="input-fb">
+                  <input id="ipt-phone" type="text" placeholder="Nhập số" />
+                </div>
+              </div>
+              <div class="sub-box-input">
+                <div class="title-input">
+                  <label class="label-input" for="inp-email">
+                    <span class="email-fb">Email<span>
+                  </label>
+                </div>
+                <div class="input-fb">
+                  <input id="ipt-email" type="text" placeholder="Nhập email" />
+                </div>
+              </div>
+              <div class="sub-box-input">
+                <div class="title-input">
+                  <label class="label-input" for="inp-content">
+                    <span class="content-fb">Nội dung<span>
+                  </label>
+                </div>
+                <div class="input-fb">
+                  <textarea id="inp-content" placeholder="Nhập nội dung phản ánh, góp ý của bạn"></textarea>
+                </div>
+              </div>
+              <div class="sub-box-input">
+                <div class="title-input">
+                </div>
+                <div class="input-fb">
+                  <button class="btn clear-fb"><span class="btn-clear-fb btn-action-cancel" onclick="clearInput()">Nhập lại</span></button>
+                  <button class="btn send-fb btn-action-send" onclick="onclickShowMessage()"><span class="btn-send-fb">Gửi góp ý</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <button class="btn-icon home btn-action-back" id="btn-back-home"><i class="icon icon-home"></i><span class="space-home">Trang chủ</span></button>
+      <div id="box-modal" class="modal popup">
+        <div class="modal-back-home">
+          <img class="btn-close-modal close-modal" src="../assets/images/icon/close.svg">
+          <h3 class="notification">
+              Bạn có muốn rời khỏi trang này
+          </h3>
+          <div class="button-notification">
+            <button class="btn message-no btn-action-cancel btn-cancel">Không</button>
+            <button class="btn message-yes btn-action-back" onclick="window.location.href='./home.html'">Có</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../assets/js/modal.js"></script>
+  <script src="../assets/js/jquery.js"></script>
+  <script src="../assets/js/message.js"></script>
+</body>
+
+</html>
